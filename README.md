@@ -11,7 +11,6 @@ Based on [PolicyStat/combokeys](https://github.com/PolicyStat/combokeys).
 
 *apps/app/index.js*
 ```js
-// before "app.use" your components
 app.use(require('derby-keyboard-combokeys'));
 ```
 

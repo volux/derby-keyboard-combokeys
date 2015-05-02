@@ -90,7 +90,7 @@ Component.prototype.inputBlur = function(event){
 
 Component.prototype.numberFocus = function(event){
 
-  this.number..focus();
+  this.number.focus();
   return false
 };
 

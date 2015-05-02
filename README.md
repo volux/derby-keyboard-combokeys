@@ -41,9 +41,9 @@ Component.prototype.create = function(){
 
   this.keyboard.touch('refresh', 'ctrl+r', false);
 
-  this.keyboard.spinner('number');
+  this.keyboard.spinner('number'); // works when <input as="number"> in focus: 'up': +1, 'down': -1, 'esc'/'mod+z': restore init value
 
-  this.keyboard.element('input', { // works when input in focus
+  this.keyboard.element('input', { // works when <input as="input"> in focus
 
       'd e r b y': {
         'action': function(event) {

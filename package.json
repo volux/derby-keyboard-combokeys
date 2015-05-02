@@ -1,0 +1,29 @@
+{
+  "name": "derby-keyboard-combokeys",
+  "version": "0.1.0",
+  "description": "Handles keyboard shortcuts in the browser for Derby.js (0.6)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volux/derby-keyboard-combokeys"
+  },
+  "keywords": [
+    "derby",
+    "keyboard",
+    "combokeys",
+    "shortcuts"
+  ],
+  "author": "Andrey Skulov <andrey.skulov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volux/derby-keyboard-combokeys/issues"
+  },
+  "homepage": "https://github.com/volux/derby-keyboard-combokeys",
+  "dependencies": {
+    "combokeys": "^2.4.3"
+  }
+
+}

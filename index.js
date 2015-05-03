@@ -58,7 +58,7 @@ Keyboard.prototype = {
   component: function(component) {
 
     component.keyboard = new Keyboard(component, this._combokeys['#document']);
-    component.page.on('destroy', this.onDestroyComponent.bind(component.keyboard))
+    component.page.once('destroy', this.onDestroyComponent.bind(component.keyboard))
   },
 
   element: function(element, shortcuts) {

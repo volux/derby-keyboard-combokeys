@@ -20,8 +20,17 @@ app.use(require('derby-keyboard-combokeys'));
 Component.prototype.create = function(){
 
   this.app.proto.keyboard.component(this);
+  
+  // default shortcuts blocked
+  this.keyboard.prevent('editable', [
+      'mod+b',
+      'mod+u',
+      'mod+i'
+    ]
+  );
 
-  this.keyboard.shortcuts({ // works on page, include all inputs or textarea
+  // works on page, include all inputs or textarea
+  this.keyboard.shortcuts({ 
 
     '§': this.inputFocus,
     '/': this.inputFocus,
@@ -84,13 +93,13 @@ Component.prototype.inputFocus = function(event){
 Component.prototype.inputBlur = function(event){
 
   this.input.blur();
-  return false
+  return false;
 };
 
 Component.prototype.numberFocus = function(event){
 
   this.number.focus();
-  return false
+  return false;
 };
 
 ```
@@ -107,6 +116,8 @@ Component.prototype.numberFocus = function(event){
   </div>  
 
   <input as="number" type="text" value="{{number}}"/>
+  
+  <div as="editable" contenteditable="true">...</div>
 
 </index:>
 ```

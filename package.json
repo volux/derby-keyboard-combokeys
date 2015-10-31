@@ -1,6 +1,6 @@
 {
   "name": "derby-keyboard-combokeys",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Handles keyboard shortcuts in the browser for Derby.js (0.6)",
   "main": "index.js",
   "scripts": {
